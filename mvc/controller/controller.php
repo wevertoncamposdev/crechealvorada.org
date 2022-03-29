@@ -23,14 +23,18 @@ class HomeController{
         include "./mvc/views/principal.php";
     }
     public function Sobre(){
-        include "./mvc/views/detalhes/sobre.php";
-    }
-    public function Admin(){
-        include "./mvc/views/administracao/admin.php";
+        include "./mvc/views/sobre.php";
     }
     public function Transparencia(){
-        include "./mvc/views/detalhes/detalhes_transparencia.php";
+        include "./mvc/views/transparencia.php";
     }
+
+
+
+  /*   public function Admin(){
+        include "./mvc/views/administracao/admin.php";
+    }
+    
     public function Eventos(){
         include "./mvc/views/detalhes/detalhes_eventos.php";
     }
@@ -39,5 +43,5 @@ class HomeController{
     }
     public function Ajudar(){
         include "./mvc/views/detalhes/parceiro.php";
-    }
+    } */
 }

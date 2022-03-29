@@ -18,24 +18,10 @@ switch ($page) {
         $ctrl->Sobre();
         break;
 
-    case "institucional":
-        $ctrl->Transparencia();
-        break;
-    case "semas":
-        $ctrl->Transparencia();
-        break;
-    case "cmdca":
+    case "transparencia":
         $ctrl->Transparencia();
         break;
 
 
-    case "detalhes_eventos":
-        $ctrl->Eventos();
-        break;
-    case "detalhes_atividades":
-        $ctrl->Atividades();
-        break;
-    case "ajudar":
-        $ctrl->Ajudar();
-        break;
+    
 }
