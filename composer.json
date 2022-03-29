@@ -1,0 +1,17 @@
+{
+    "name": "weverton/alvorada_site",
+    "autoload": {
+        "psr-4": {
+            "Weverton\\AlvoradaSite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wevertoncamposdev",
+            "email": "wevertoncamposdev@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
