@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 
-
 <!-- banner -->
 <div class="banner text-center">
 

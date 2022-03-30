@@ -2,16 +2,13 @@
 
 require 'model.php';
 
-$db = new Database();
-
-$page = 'institucional';
-
+$query = $_POST['query'];
 
 /* Conectar ao Banco de Dados */
 $db = new Database();
 
 /* Consulta por `data` distinta de acordo com o `tipo` */
-$sql = "SELECT DISTINCT `data` FROM transparencia WHERE tipo = '$page' ";
+$sql = "SELECT DISTINCT `data` FROM transparencia WHERE tipo = '$query' ORDER BY `data` DESC ";
 $result = $db->conectar()->query($sql);
 $count = 1;
 if ($result->num_rows > 0) {
@@ -35,7 +32,7 @@ if ($result->num_rows > 0) {
                 <?php
 
                 /* Consulta por `secao` distinta de acordo com `tipo` e a `data`*/
-                $sql2 = "SELECT DISTINCT `secao` FROM transparencia WHERE tipo = '$page' AND `data` = '$data' ";
+                $sql2 = "SELECT DISTINCT `secao` FROM transparencia WHERE tipo = '$query' AND `data` = '$data' ";
                 $result2 = $db->conectar()->query($sql2);
 
                 if ($result2->num_rows > 0) {
@@ -53,12 +50,10 @@ if ($result->num_rows > 0) {
                                 <h5><?php echo $row2['secao']; ?> </h5>
                                 <hr>
 
-
-
                                 <?php
 
                                 /* Consulta geral de acordo com `tipo` a `secao` e a `data`*/
-                                $sql3 = "SELECT * FROM transparencia WHERE tipo = '$page' AND `secao` = '$secao' AND `data` = '$data' ";
+                                $sql3 = "SELECT * FROM transparencia WHERE tipo = '$query' AND `secao` = '$secao' AND `data` = '$data' ";
                                 $result3 = $db->conectar()->query($sql3);
 
                                 if ($result3->num_rows > 0) {
@@ -103,7 +98,7 @@ if ($result->num_rows > 0) {
 <?php
     }
 } else {
-    echo "Não há dados!";
+    echo "Não há arquivo para esse tipo de pesquisa!";
 }
 
 /* Finalizando conexão com o banco de dados! */

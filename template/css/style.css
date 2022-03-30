@@ -2,6 +2,7 @@
 @import url(button.css);
 @import url(redes.css);
 @import url(banner.css);
+@import url(depoimentos.css);
 html,
 body {
     width: 100%;
@@ -55,10 +56,6 @@ li {
     border: none;
     border-radius: 10px;
     color: #fff;
-}
-
-.content {
-    height: 800px;
 }
 
 .footer {

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./template/css/style.css">
   
   <title>Alvorada</title>
+  <link rel="shortcut icon" href="./template/img/logo.png">
 </head>
 
 <body>

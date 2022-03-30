@@ -1,0 +1,46 @@
+.depoimentos {
+    font-family: poppins;
+    background: linear-gradient(90deg, rgba(207, 92, 210, 1) 0%, rgba(133, 103, 231, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+.row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img-text {
+    width: 100%;
+    height: 100%;
+    font-family: poppins;
+    display: block;
+    padding: 10% 10%;
+    text-align: justify;
+    background: rgb(118, 194, 238);
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 76% 88%, 42% 100%, 47% 88%, 0 87%);
+}
+
+.img-text h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.img-area {
+    width: 150px;
+    clip-path: circle();
+}
+
+.img-area img {
+    width: 100%;
+    display: block;
+}
+
+.single-box {
+    margin-bottom: 10px;
+}
