@@ -1,8 +1,12 @@
 <?php
 
-/* require '../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable('./');
-$dotenv->load(); */
+
+$path = $_SERVER['DOCUMENT_ROOT'] . '/crechealvoradaorg/vendor/autoload.php';
+$env = $_SERVER['DOCUMENT_ROOT'] . '/crechealvoradaorg';
+
+require $path;
+$dotenv = Dotenv\Dotenv::createImmutable($env);
+$dotenv->load();
 
 class Model
 {
@@ -23,11 +27,11 @@ class Database
 
     public function conectar()
     {
-        $host = 'cpanel.crechealvorada.org';
-        $user = 'crech964_Cpanel';
-        $password = 'Ca05Em12@cpanel';
-        $database = 'crech964_site';
-        $port = '3306';
+        $host = $_ENV['DB_HOST'];
+        $user = $_ENV['DB_USER'];
+        $password = $_ENV['DB_PASSWORD'];
+        $database = $_ENV['DB_DATABASE'];
+        $port = $_ENV['DB_PORT'];
 
         $db_connect = new mysqli($host, $user, $password, $database, $port);
         mysqli_set_charset($db_connect, "utf8");
@@ -57,5 +61,6 @@ class Database
 
 
 /* finalizar conexão com as variaveis de ambiente */
-/* $dotenv->safeLoad(); */
+$dotenv->safeLoad();
 
+/*  */

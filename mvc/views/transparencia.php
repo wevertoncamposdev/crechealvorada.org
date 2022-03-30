@@ -2,7 +2,7 @@
 
 <div class="" style=" margin-top:50px; margin-bottom: 150px;">
     <div class="container">
-        <div class="row">
+        <div class="row" id="item">
 
             <div class="col-md-12 section-title text-center">
                 <h3>Transparência</h3>
@@ -62,6 +62,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<script src="./template/js/ajax.js"></script>
+<script src="./mvc/js/ajax.js"></script>
 
 <?php include 'footer.php'; ?>

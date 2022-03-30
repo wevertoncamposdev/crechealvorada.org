@@ -1,3 +1,4 @@
+
 <div class="" id="sobre">
     <div class="container">
 
@@ -29,12 +30,13 @@
                             adolescentes, a fim promover a cidadania.
                         </p>
                     </div>
-                    <a href="?page=sobre" class="anchor-btn">Saiba Mais<i class="fas fa-arrow-right pd-lt-10"></i></a>
+                    <a href="?page=sobre" class="" >
+                        <button class="button-52" role="button">Mais</button>
+                    </a>
                 </div>
             </div>
-
-
 
         </div>
     </div>
 </div>
+

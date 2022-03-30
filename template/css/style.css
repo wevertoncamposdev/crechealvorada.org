@@ -1,4 +1,5 @@
 @import url(bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,300&display=swap');
 @import url(button.css);
 @import url(redes.css);
 @import url(banner.css);
@@ -45,10 +46,6 @@ li {
     width: 50px;
 }
 
-.banner {
-    height: 70vh;
-}
-
 .btn-parceiro {
     width: 180px;
     height: 80px;
@@ -56,6 +53,10 @@ li {
     border: none;
     border-radius: 10px;
     color: #fff;
+}
+
+.sobre {
+    color: rgb(124, 124, 124);
 }
 
 .footer {

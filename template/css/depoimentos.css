@@ -1,44 +1,117 @@
 .depoimentos {
     font-family: poppins;
     background: linear-gradient(90deg, rgba(207, 92, 210, 1) 0%, rgba(133, 103, 231, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 4px;
 }
 
 .row {
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .img-text {
     width: 100%;
     height: 100%;
-    font-family: poppins;
-    display: block;
-    padding: 10% 10%;
-    text-align: justify;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
     background: rgb(118, 194, 238);
     color: #fff;
     clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 76% 88%, 42% 100%, 47% 88%, 0 87%);
+    /* variavel para animação */
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+
+/* Aqui definimos a nossa animação com o nome "rotate" */
+
+@-webkit-keyframes rotateplane {
+    0% {
+        -webkit-transform: perspective(20px)
+    }
+    50% {
+        -webkit-transform: rotate(2deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
 }
 
 .img-text h2 {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: rgb(228, 221, 131);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .img-text p {
     position: relative;
     margin-bottom: 5%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
-.img-area {
+.outside {
+    position: relative;
     width: 150px;
-    clip-path: circle();
+    height: 150px;
+    background: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -webkit-animation: rotatephoto 1.2s infinite ease-in-out;
 }
 
-.img-area img {
+@-webkit-keyframes rotatephoto {
+    0% {
+        -webkit-transform: perspective(-20px)
+    }
+    50% {
+        -webkit-transform: rotate(-2deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+.inside {
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+.inside img {
+    object-fit: cover;
     width: 100%;
-    display: block;
+    height: 100%;
+}
+
+.inside svg {
+    fill: rgb(190, 50, 80);
 }
 
 .single-box {

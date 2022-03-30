@@ -38,8 +38,8 @@
             <a class="nav-link " href="#sobre">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="?page=transparencia">Transparência</a>
-          </li>
+            <a class="nav-link " href="#depoimento">Depoimentos</a>
+          </li>        
           <li class="nav-item">
             <a class="nav-link" href="#eventos">Eventos</a>
           </li>
@@ -48,6 +48,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#contato">Contato</a>
+          </li>
+          <li class="nav-item" style="font-weight: bold;">
+            <a class="nav-link" href="?page=transparencia">Transparência</a>
           </li>
         </ul>
       </div>
