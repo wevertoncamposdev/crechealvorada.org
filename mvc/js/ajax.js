@@ -17,15 +17,12 @@
 
 $(document).ready(function() {
     $("#item").find("button[type='button']").click(function() {
-
         let id = $(this).attr("id");
-
         if (id == "institucional" || id == "semas" || id == "cmdca") {
-
             $.ajax({
                 type: "POST",
                 dataType: "html",
-                url: './mvc/model/consultar.php',
+                url: './mvc/views/dinamic/consultar.php',
                 data: { query: id },
                 beforeSend: function() {
                     $('#resultado-' + id).html(
@@ -42,15 +39,12 @@ $(document).ready(function() {
                 },
                 success: function(result) {
                     $('#resultado-' + id).html(result);
-
                     $('#' + id).attr('id', '#acessou');
-
                 },
                 error: function() {
                     $('#resultado-' + id).html("Error");
                 }
             })
-
         }
     });
 });

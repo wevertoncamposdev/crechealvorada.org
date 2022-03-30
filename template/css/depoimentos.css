@@ -2,7 +2,12 @@
     font-family: poppins;
     background: linear-gradient(90deg, rgba(207, 92, 210, 1) 0%, rgba(133, 103, 231, 1) 50%, rgba(0, 212, 255, 1) 100%);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.single-box {
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .titulo {
@@ -13,14 +18,11 @@
 
 .titulo h2 {
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
     color: #ffffff;
     letter-spacing: 4px;
-}
-
-.row {
-    margin-bottom: 5%;
 }
 
 .img-text {
@@ -114,6 +116,13 @@
     fill: rgb(190, 50, 80);
 }
 
-.single-box {
-    margin-bottom: 10px;
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+
+.carousel-indicators button {
+    width: 15px;
+    height: 15px;
 }

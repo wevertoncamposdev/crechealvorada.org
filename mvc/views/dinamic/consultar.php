@@ -1,6 +1,6 @@
 <?php
 
-require 'model.php';
+require $_SERVER["DOCUMENT_ROOT"] . '/novo.crechealvorada.org/mvc/model/model.php';
 
 $query = $_POST['query'];
 

@@ -1,8 +1,8 @@
 <?php
 
 
-$path = $_SERVER['DOCUMENT_ROOT'] . '/crechealvoradaorg/vendor/autoload.php';
-$env = $_SERVER['DOCUMENT_ROOT'] . '/crechealvoradaorg';
+$path = $_SERVER['DOCUMENT_ROOT'] . '/novo.crechealvorada.org/vendor/autoload.php';
+$env = $_SERVER['DOCUMENT_ROOT'] . '/novo.crechealvorada.org';
 
 require $path;
 $dotenv = Dotenv\Dotenv::createImmutable($env);

@@ -1,0 +1,25 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sobre h5 {
+    font-size: 20px;
+    color: rgb(228, 56, 33);
+    letter-spacing: 2px;
+    text-align: end;
+}
+
+.sobre p {
+    color: rgb(124, 124, 124);
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.sobre-area {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

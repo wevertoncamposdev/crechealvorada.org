@@ -1,27 +1,27 @@
+<div class="sobre-area" id="sobre">
+    <div class="container-fluid">
 
-<div class="" id="sobre">
-    <div class="container">
-
-        <div class="row">
+        <div class="row sobre-row">
 
             <div class="" style="height: 80px;">
                 <span class=""></span>
             </div>
 
             <!-- video youtube -->
-            <div class="col-md-6">
+            <div class="col-md-4 sobre-video">
                 <div class="">
-                    <div class="sub-title-paragraph">
-                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/n94CTXfhvAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="">
+                        <iframe width="100%" height="230" src="https://www.youtube.com/embed/n94CTXfhvAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="sobre">
-                    <div class="sub-title-paragraph">
+
+                    <div>
                         <h5>Alvorada Associação de Amigos da Comunidade Jardim do Trevo</h5>
-                        <p class="text-center">
+                        <p class="">
                             A Alvorada Associação de Amigos da Comunidade Jardim do Trevo, fundada em 2009, nasceu do sonho de um
                             grupo de amigos de boa vontade, que sempre estiveram envolvidos em projetos e ações sociais em
                             comunidades de Ribeirão Preto. Sendo assim, por conhecerem as demandas e questões sociais locais,
@@ -30,13 +30,15 @@
                             adolescentes, a fim promover a cidadania.
                         </p>
                     </div>
-                    <a href="?page=sobre" class="" >
-                        <button class="button-52" role="button">Mais</button>
-                    </a>
+
+                    <div>
+                        <a href="?page=sobre" class="">
+                            <button class="button-52" role="button">Mais</button>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
