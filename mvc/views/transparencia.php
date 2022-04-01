@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<div class="" style=" margin-top:50px; margin-bottom: 150px;">
+<!-- <div class="" style=" margin-top:50px; margin-bottom: 150px;">
     <div class="container">
         <div class="row" id="item">
 
@@ -14,7 +14,7 @@
 
                 <div class="accordion-item">
 
-                    <!-- Verificar uma forma mais pratica para esta consulta -->
+                   
                     <h2 class="accordion-header" id="heading-institucional">
                         <button id="institucional" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-institucional" aria-expanded="false" aria-controls="collapse-institucional">
                             INSTITUCIONAL
@@ -57,11 +57,12 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
+<?php include 'layout.php'; ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<script src="./mvc/js/ajax.js"></script>
+<!-- <script src="./mvc/js/ajax.js"></script> -->
 
 <?php include 'footer.php'; ?>

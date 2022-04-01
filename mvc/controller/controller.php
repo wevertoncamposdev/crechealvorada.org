@@ -1,5 +1,6 @@
 <?php
 
+
 require "./mvc/model/model.php";
 
 class Controller {
@@ -19,6 +20,7 @@ class Controller {
 }
 
 class HomeController{
+    
     public function index(){
         include "./mvc/views/principal.php";
     }

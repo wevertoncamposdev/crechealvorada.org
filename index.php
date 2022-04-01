@@ -2,7 +2,7 @@
 
 
 /* controller */
-require "./mvc/controller/controller.php";
+require './mvc/controller/controller.php';
 
 $page = isset($_GET['page']) ? $_GET['page'] : "index";
 

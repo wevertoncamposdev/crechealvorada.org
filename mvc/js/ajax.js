@@ -22,7 +22,7 @@ $(document).ready(function() {
             $.ajax({
                 type: "POST",
                 dataType: "html",
-                url: './mvc/views/dinamic/consultar.php',
+                url: './mvc/model/consultar.php',
                 data: { query: id },
                 beforeSend: function() {
                     $('#resultado-' + id).html(
@@ -42,7 +42,7 @@ $(document).ready(function() {
                     $('#' + id).attr('id', '#acessou');
                 },
                 error: function() {
-                    $('#resultado-' + id).html("Error");
+                    $('#resultado-' + id).html("Error durante a consulta");
                 }
             })
         }

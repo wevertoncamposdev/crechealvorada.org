@@ -24,7 +24,7 @@
 <?php include "./mvc/views/sobre.php"; ?>
 
 <!-- Depoimentos -->
-<?php include "./mvc/views/depoimentos.php"; ?>
+<?php /* include "./mvc/views/depoimentos.php"; */ ?>
 
 <!-- Noticias -->
 
@@ -32,8 +32,6 @@
 
 
 <div class="container content"></div>
-
-
 
 
 <?php include 'footer.php'; ?>
